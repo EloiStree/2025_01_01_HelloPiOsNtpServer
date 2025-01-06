@@ -40,11 +40,11 @@ restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap
 restrict 0.0.0.0 mask 0.0.0.0 nomodify notrap
 
 
-sudo systemctl restart ntp
 ntpq -p
-sudo systemctl enable ntp
-
 sudo timedatectl set-timezone Europe/Brussels
+
+sudo systemctl enable ntp
+sudo systemctl restart ntp
 
 ```
 
