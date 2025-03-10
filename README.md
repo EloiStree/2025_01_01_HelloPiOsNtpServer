@@ -121,9 +121,12 @@ if __name__ == "__main__":
             print("Warning: Offset is greater than 1 second.")
         else:
             print("Offset is within acceptable range.")
-
-
 ```
+
+It works and you are coding a Unity3D game ?   
+`https://github.com/EloiStree/OpenUPM_UnityFetchOffsetNTP.git`   
+
+ 
 
 
 
