@@ -12,42 +12,64 @@ NTP: https://github.com/EloiStree/2024_07_07_UnityFetchOffsetNTP
 -------------
 
 
-```
+Check that the Raspberry Pi is updated
+```sudo apt update && sudo apt upgrade -y```
 
-sudo apt update && sudo apt upgrade -y
+Install the manual in case you need to find it later
+```
 rm /git/ntp_server -r
 git clone https://github.com/EloiStree/2025_01_01_HelloPiOsNtpServer.git /git/ntp_server/
+```
+
+Install the NTP tool on the PI and check it status
+```
 sudo apt install ntp -y
 sudo systemctl status ntp
-
+```
+Open and edit the ntp config file to set the source
+```
 sudo nano /etc/ntp.conf
-// For anywhere
+```
+
+Copy the following depending on your country  
+  
+For world synchronisation  
+```
 pool 0.debian.pool.ntp.org iburst
 pool 1.debian.pool.ntp.org iburst
 pool 2.debian.pool.ntp.org iburst
 pool 3.debian.pool.ntp.org iburst
-
-// or For belgium
+```
+  
+For belgium synchronisation  
+```
 server 0.be.pool.ntp.org iburst
 server 1.be.pool.ntp.org iburst
 server 2.be.pool.ntp.org iburst
 server 3.be.pool.ntp.org iburst
-
-// Only your computer
-restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap
-
-// for all
-restrict 0.0.0.0 mask 0.0.0.0 nomodify notrap
-
-
-ntpq -p
-sudo timedatectl set-timezone Europe/Brussels
-
-sudo systemctl enable ntp
-sudo systemctl restart ntp
-
 ```
 
-to open port:  123.
+
+Copy this n the config to allows anyone to connect to it.  
+```
+restrict 0.0.0.0 mask 0.0.0.0 nomodify notrap
+```
+
+Check the peer server and set timezone to brussels (if in Belgium)
+```
+ntpq -p
+sudo timedatectl set-timezone Europe/Brussels
+```
+
+Enable if not already enable
+```
+sudo systemctl enable ntp
+```
+
+Restart the server to be sure it is started
+```
+sudo systemctl restart ntp
+```
+
 
 
