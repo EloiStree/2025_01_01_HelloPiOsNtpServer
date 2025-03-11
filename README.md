@@ -141,6 +141,7 @@ sudo crontab -e
 That run every 10 a NTP restart to be sure
 ```
 */10 * * * * /usr/bin/sudo /usr/sbin/service ntp restart
+@reboot lxterminal -e "python /git/push_iid/RunServer.py"
 
 ```
 
@@ -148,7 +149,10 @@ Let's check it:
 ```
 sudo crontab -l
 sudo systemctl start cron
+
 ```
+
+
 
 
 
