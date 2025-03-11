@@ -134,4 +134,22 @@ You can use this script: `NtpOffsetOnlyOnceMono`
 
 
 
+You can add a time routine on the PI:
+```
+sudo crontab -e
+```
+That run every 10 a NTP restart to be sure
+```
+*/10 * * * * /usr/bin/sudo /usr/sbin/service ntp restart
+
+```
+
+Let's check it: 
+```
+sudo crontab -l
+sudo systemctl start cron
+```
+
+
+
 
