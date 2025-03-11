@@ -1,6 +1,11 @@
 
 # Hello Pi Os Ntp Server  
 
+
+Full step by step in video:
+[![image](https://github.com/user-attachments/assets/d7a7b595-94ab-4b5a-a828-887e459b36a0)](https://youtu.be/YQytoUkc9QA)
+[https://youtu.be/YQytoUkc9QA](https://youtu.be/YQytoUkc9QA)
+
 Code and tutorial to enable an NTP server on your Raspberry Pi to synchronize the time of devices connected to it (with Unity3D for example)
 
 As part of a local multiplayer concept, and the apint.io project, I need an NTP server to run offline on the Raspberry Pi.  
