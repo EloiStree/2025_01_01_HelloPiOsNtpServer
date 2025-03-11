@@ -59,8 +59,8 @@ restrict 0.0.0.0 mask 0.0.0.0 nomodify notrap
 
 Check the peer server and set timezone to brussels (if in Belgium)
 ```
-ntpq -p
 sudo timedatectl set-timezone Europe/Brussels
+ntpq -p
 ```
 
 Enable if not already enable
