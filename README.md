@@ -73,7 +73,10 @@ Restart the server to be sure it is started
 sudo systemctl restart ntp
 ```
 
-
+Open the port of the raspberry pi:
+```
+sudo ufw allow 123/udp
+```
 
 **On Window**:
 
@@ -153,6 +156,9 @@ sudo systemctl start cron
 
 
 
+https://network-tools.webwiz.net/ntp-server-test.htm
+
+![image](https://github.com/user-attachments/assets/e799cd14-99d0-4956-8c17-dc6e40ea98e2)
 
 
 
