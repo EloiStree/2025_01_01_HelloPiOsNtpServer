@@ -13,7 +13,9 @@ NTP: https://github.com/EloiStree/2024_07_07_UnityFetchOffsetNTP
 
 
 Check that the Raspberry Pi is updated
-```sudo apt update && sudo apt upgrade -y```
+```
+sudo apt update && sudo apt upgrade -y
+```
 
 Install the manual in case you need to find it later
 ```
