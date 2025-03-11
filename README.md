@@ -158,7 +158,6 @@ sudo systemctl start cron
 
 https://network-tools.webwiz.net/ntp-server-test.htm
 
-![image](https://github.com/user-attachments/assets/e799cd14-99d0-4956-8c17-dc6e40ea98e2)
-
-
+[![image](https://github.com/user-attachments/assets/e799cd14-99d0-4956-8c17-dc6e40ea98e2)](https://network-tools.webwiz.net/ntp-server-test.htm)  
+[![image](https://github.com/user-attachments/assets/42ada16f-27c8-4958-9b59-e3586729e81c)](https://network-tools.webwiz.net/ntp-server-test.htm)  
 
