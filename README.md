@@ -81,7 +81,7 @@ sudo systemctl restart ntp
 
 Open the port of the raspberry pi:
 ```
-sudo apt install ufw
+sudo apt install ufw -y
 sudo ufw allow 123/udp
 ```
 
