@@ -26,6 +26,7 @@ sudo apt update && sudo apt upgrade -y
 Install the manual in case you need to find it later
 ```
 rm /git/ntp_server -r
+mkdir /git/ntp_server 
 git clone https://github.com/EloiStree/2025_01_01_HelloPiOsNtpServer.git /git/ntp_server/
 ```
 
