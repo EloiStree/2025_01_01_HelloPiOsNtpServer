@@ -100,8 +100,8 @@ Run this python script:
 import ntplib
 import time
 
-your_ntp_server = 'raspberrypi.local'
 your_ntp_server = 'raspberrypi4.local'
+your_ntp_server = 'raspberrypi.local'
 
 
 def get_ntp_offset(ntp_server: str):
